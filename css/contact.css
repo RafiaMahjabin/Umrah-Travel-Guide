@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00B98E; /* Set background color to light blue */
+    color: #1d1c1c; /* Set text color to white */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative; /* Add relative positioning */
+}
+.home-icon, .emergency-icon, .back-icon {
+    font-size: 2em;
+    color: #0f3529;
+    position: absolute;
+    top: 20px;
+    text-decoration: none;
+}
+.home-icon {
+    left: 20px;
+}
+.back-icon {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #0f3529;
+}
+.emergency-icon {
+    right: 20px;
+}
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-decoration: underline; /* Add underline to heading */
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px; /* Add gap between boxes */
+}
+.info-box {
+    background-color: #11938c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Adjust width as needed */
+    text-align: center;
+    color: #000; /* Set text color to black */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+.info-box:hover {
+    transform: translateY(-10px); /* Move box up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+.info-box i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #00BCD4;
+}
+.info-box h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+.info-box p {
+    font-size: 1em;
+    margin: 0;
+}
+.location-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.location-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.map {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
